@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title> Jana </title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/img/favicons/favicon.ico">
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <!-- build:css -->
+    <link href="../assets/css/app.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <form class="auth-form auth-form-reflow">
+        <div class="text-center mb-4">
+            <div class="mb-4">
+                <img class="rounded" src="../assets/img/apple-touch-icon (1).png" alt="" height="72">
+            </div>
+            <h1 class="h3"> Recover Your Username </h1>
+        </div>
+        <p class="mb-4 text-center"> Tempora iusto officia magnam fugiat sequi aliquam cum consectetur aperiam beatae, rerum obcaecati ea. </p>
+        <!-- Expansion Cards -->
+        <div id="recovery-mode" class="card-expansion">
+            <!-- .card-expansion-item -->
+            <div class="card card-reflow card-expansion-item expanded text-center">
+                <div class="card-header px-0 border-0 text-center" id="recoverByEmail ">
+                    <button type="button" class="btn btn-reset" data-toggle="collapse" data-target="#byEmail" aria-expanded="true" aria-controls="byEmail"><span class="collapse-indicator mr-2"><i class="far fa-lg fa-circle"></i></span> <strong>Recover using your email address</strong></button>
+                </div>
+                <div id="byEmail" class="collapse show text-center" aria-labelledby="recoverByEmail" data-parent="#recovery-mode">
+                    <div class="card-body pt-0 pl-5">
+                        <input type="email" name="recoverEmail" class="form-control form-control-lg" placeholder="Ex: john@uselooper.com">
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-expansion-item -->
+            <!-- .card-expansion-item -->
+            <div class="card card-reflow card-expansion-item text-center">
+                <div class="card-header px-0 border-0" id="recoverByMobile">
+                    <button type="button" class="btn btn-reset" data-toggle="collapse" data-target="#byMobile" aria-expanded="false" aria-controls="byMobile"><span class="collapse-indicator mr-2"><i class="far fa-lg fa-circle"></i></span> <strong>Recover using your mobile number</strong></button>
+                </div>
+                <div id="byMobile" class="collapse text-center" aria-labelledby="recoverByMobile" data-parent="#recovery-mode">
+                    <div class="card-body pt-0 pl-5">
+                        <!-- .form-group -->
+                        <div class="form-group mb-4">
+                            <select name="inputCountry" class="custom-select custom-select-lg">
+                    <option value=""> Select Country </option>
+                  </select>
+                        </div>
+                        <!-- /.form-group -->
+                        <!-- .form-group -->
+                        <div class="form-group mb-4">
+                            <label class="d-block text-left" for="inputMobile">Mobile Number</label> <input type="text" id="inputMobile" name="inputMobile" class="form-control form-control-lg">
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-expansion-item -->
+        </div>
+        <!-- /Expansion Cards -->
+        <!-- actions -->
+        <div class="d-block d-md-inline-block mb-2">
+            <button class="btn btn-lg btn-block btn-primary" type="submit">Recover Username</button>
+        </div>
+        <div class="d-block d-md-inline-block">
+            <a href="../index.html" class="btn btn-block btn-light">Return to signin</a>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="col-12">
+                <footer class="auth-footer text-center"> © 2018 All Rights Reserved. <a href="#">Privacy</a> and <a href="#">Terms</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--footer ends-->
+
+    <!-- Bootstrap 5 Javascript -->
+    <script src="../assets/js/vendor/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- Custom Javascript -->
+    <!-- build:js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

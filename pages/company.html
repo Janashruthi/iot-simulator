@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>company</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/img/favicons/favicon.ico">
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <!-- build:css -->
+    <link rel="stylesheet" href="../assets/fonts/bootstrap-icons/font/bootstrap-icons.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="../assets/css/app.css " rel="stylesheet " type="text/css ">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="aside">
+        <div class="flex-column font-weight-extra-bold logo-1">
+            <img class="mr-2" src="../assets/img/falcon.logo.png" alt="Logo " width="58 ">
+            <span class="text-sans-serif font-weight-extra-bold logo-name">falcon</span>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="dashboard.html"><i class="bi bi-house icons "></i>Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="company.html"><i class="bi bi-building icons"></i>Company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="location.html"><i class="bi bi-geo-fill icons"></i>Location</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="camera.html"><i class="bi bi-camera icons"></i>Camera</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="vechicle.html"><i class="bi bi-bicycle icons"></i>Vechical</a>
+            </li>
+        </ul>
+    </div>
+    <div class="company">
+        <header>
+            <div class="container padding-element-1">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="search-form">
+                            <form class="d-flex">
+                                <input class="form-control form" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="profile" src="../assets/img/profile.img" alt="" width="40">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">settings</a></li>
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="../index.html">log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class=" page-content-section padding-element-1 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <div class="card card-type-1 ">
+                        <div class="card-header ">
+                            <div class="d-flex justify-content-between ">
+                                <h2 class="card-name ">Company</h2>
+                                <div><a href=" " class="btn btn-primary " data-bs-toggle="modal " data-bs-target="#addCompany ">Add Company</a></div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="modal fade " id="addCompany " tabindex="-1 " aria-labelledby="addCompanyLabel " aria-hidden="true ">
+                                <div class="modal-dialog ">
+                                    <div class="modal-content ">
+                                        <div class="modal-header ">
+                                            <h5 class="modal-title " id="addCompanyLabel ">Modal title</h5>
+                                            <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <div class="mb-3 ">
+                                                <label for="exampleFormControlInput1 " class="form-label ">Company Name</label>
+                                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="Name ">
+                                            </div>
+                                            <div class="mb-3 ">
+                                                <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
+                                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@email.com ">
+                                            </div>
+                                            <div class="mb-3 ">
+                                                <label for="exampleFormControlInput1 " class="form-label ">Password</label>
+                                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="Password ">
+                                            </div>
+                                            <div class="mb-3 ">
+                                                <label for="exampleFormControlInput1 " class="form-label ">Confirm Password</label>
+                                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="confirm Password ">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                                            <button type="button " class="btn btn-primary ">Create Company</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table ">
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Company name</th>
+                                    <th>E.mail Id</th>
+                                    <th>Phone </th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>CTS</td>
+                                    <td>sree@gmail.com</td>
+                                    <td>8786858988</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <a><i class="bi bi-pen-fill"></i></a>
+                                        <a><i class="bi bi-trash-fill"></i></a>
+                                        <a><i class="bi bi-three-dots-vertical"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>TCS</td>
+                                    <td>bala202@gmail.com</td>
+                                    <td>6935124875</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <a><i class="bi bi-pen-fill"></i></a>
+                                        <a><i class="bi bi-trash-fill"></i></a>
+                                        <a><i class="bi bi-three-dots-vertical"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Wipro</td>
+                                    <td>ram784@gmail.com</td>
+                                    <td>6869631524</td>
+                                    <td>Pending...</td>
+                                    <td>
+                                        <a><i class="bi bi-pen-fill"></i></a>
+                                        <a><i class="bi bi-trash-fill"></i></a>
+                                        <a><i class="bi bi-three-dots-vertical"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>ATS</td>
+                                    <td>aadhi19@gmail.com</td>
+                                    <td>9686748512</td>
+                                    <td>Deactivated</td>
+                                    <td>
+                                        <a><i class="bi bi-pen-fill"></i></a>
+                                        <a><i class="bi bi-trash-fill"></i></a>
+                                        <a><i class="bi bi-three-dots-vertical"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap 5 Javascript -->
+    <script src="../assets/js/vendor/bootstrap.bundle.min.js " type="text/javascript "></script>
+    <script src="../assets/js/vendor/echarts.js " type="text/javascript "></script>
+    <!-- Custom Javascript -->
+    <!-- build:js -->
+    <script src="../assets/js/app.js "></script>
+    <!-- endbuild -->
+</body>
+
+</html>

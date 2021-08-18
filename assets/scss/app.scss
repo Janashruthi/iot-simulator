@@ -1,0 +1,144 @@
+    // Custom bootstrap variable overrides
+    @import "bootstrap_variable_overrides";
+    // Bootstrap and its default variables
+    @import "../../node_modules/bootstrap/scss/bootstrap";
+    // Your style
+    @import "variables";
+    @import "mixins";
+    @import "general";
+    @import "layout";
+    @import "module";
+    /* CUSTOM STYLES
+-------------------------------------------------- */
+    
+    //Smooth Scroll
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: rgb(250, 245, 245);
+    }
+    
+    .aside {
+        background-color: #fff;
+        height: 100vh;
+        width: 260px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .header {
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .header .dashboard {
+        background: #346Cb0;
+        height: 56px;
+        padding-top: 15px;
+    }
+    
+    .navigation {
+        right: 0;
+        top: 0;
+    }
+    
+    .main-section-1 {
+        padding-left: 260px;
+    }
+    
+    .nav-style-1 .nav-item .nav-link {
+        color: #0a0a0a;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    
+    .navigation .nav-style-1 .nav-link i {
+        padding-right: 15px;
+        color: #abadb3;
+        font-size: 20px;
+    }
+    
+    .nav-style-1 .nav-item .nav-link i:hover {
+        color: #346Cb0;
+    }
+    
+    .nav-style-1 .nav-item .nav-link.active {
+        color: #346Cb0;
+    }
+    /**main section**/
+    
+    .main-section-1 .header {
+        background: #558ccf;
+        height: 56px;
+        position: fixed;
+    }
+    
+    .search-form {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        color: transparent;
+    }
+    
+    .search-form:hover {
+        color: #fff;
+    }
+    
+    .form-1 {
+        border-radius: 5px;
+        padding-top: 0;
+    }
+    
+    .page-content-section {
+        padding-left: 280px;
+        padding-top: 120px;
+    }
+    
+    .profile-summary {
+        padding-top: 5px;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .dropdown-1 {
+        padding-top: 0;
+        .border-item {
+            border-bottom: solid 1px #888c9b;
+            padding-bottom: 10px;
+        }
+    }
+    
+    .dropdown-toggle {
+        background: transparent;
+        height: 50px;
+        margin: 5px 0;
+        border: none;
+        .profile-img {
+            width: 32px;
+            border-radius: 50%;
+        }
+        &:after {}
+        &:focus,
+        &:hover {
+            background-color: #558ccf;
+        }
+    }
+    
+    .dropdown-1 {
+        .dropdown-menu {
+            a {
+                color: #34343f;
+            }
+            a:hover {
+                background-color: #558ccf;
+                transition: 3ms;
+            }
+            a:hover {
+                color: #fff;
+            }
+        }
+    }
